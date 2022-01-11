@@ -109,3 +109,66 @@ hr {
 .news-cards a:hover{
     text-decoration: underline;
 }
+/* cards baner one */
+.cards-baner-one {
+    width: 100%;
+    height: 350px;
+    background: url(../img/tech-red.jpeg)no-repeat center center/cover;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.cards-baner-one .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: white;
+}
+.cards-baner-one p,
+.cards-baner-one h2{
+    margin: 20px 0;
+}
+/* cards baner two */
+.cards-baner-two{
+    width: 100%;
+    height: 300px;
+    background: url(../img/image-five.jpeg) no-repeat center center/cover;
+    margin-top: 20px;
+}
+.cards-baner-two .contaner {
+    width: 60%;
+    padding: 100px 0 0 30px;
+    color: white;
+ } 
+ /* social */
+ .social{
+     margin: 50px;
+ }
+ .social p{
+     text-align: center;
+     font-size: 30px;
+     margin-bottom: 30px;
+ }
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+} 
+.links a{
+    margin: 0 30px;
+}
+.links a i {
+    font-size: 3rem;
+}
+.links a i:hover{
+    opacity: 0.6;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #948e8e;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 14px;
+    padding: 35px;
+}
