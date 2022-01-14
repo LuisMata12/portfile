@@ -50,6 +50,14 @@ ul{
     flex: 1;
     margin-left: 20px;
 }
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.9rem;
+}
 /* shoecase*/
 hr {
     margin: 10px 0;
@@ -58,7 +66,7 @@ hr {
     width: 100%;
     height: 550px;
     background: url(../img/showcase2.jpeg) no-repeat center center/cover;
-    padding-bottom: 50px;
+    padding: 50px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -165,10 +173,47 @@ hr {
 /* footer */
 .footer{
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-color: #948e8e;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-size: 14px;
     padding: 35px;
+    gap: 10px;
+    align-items: flex-start;
 }
+.footer .colum-footer ul{
+    margin: auto;
+}
+.footer .colum-footer ul li{
+    line-height: 1.8;
+}
+@media screen and (max-width: 700px){
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: .5 ease-in-out;
+    }
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-20px);
+    }
+    .nav-menu-right{
+        margin-right: 50px;
+    }
+    .news-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cards-baner-one .content,
+    .cards-baner-two .contaner{
+        width: 80%;
+    }
+
+}
+
