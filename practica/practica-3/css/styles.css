@@ -216,4 +216,14 @@ hr {
     }
 
 }
+@media screen and (max-width: 400px){
+    .news-cards{
+        grid-template-columns: 1fr;
+    }
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+    }
+    
+}
 
